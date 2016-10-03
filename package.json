@@ -1,0 +1,36 @@
+{
+  "name": "ogle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build.app": "./node_modules/.bin/babel -D -s false -d ./app ./src/app",
+    "build.app.w": "npm run build.app -- -w",
+    "start.app": "node ./app",
+    "build.ui": "./node_modules/.bin/webpack",
+    "build.ui.w": "npm run build.ui -- -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "babel-preset-latest": "^6.16.0",
+    "jasmine": "^2.5.2",
+    "riotjs-loader": "^3.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dashboard": "^0.2.0"
+  },
+  "dependencies": {
+    "dom-middleware": "0.0.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "lodash": "^4.16.2",
+    "riot": "^2.6.2"
+  },
+  "babel": {
+    "presets": ["latest"]
+  }
+}
